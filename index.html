@@ -1,1 +1,65 @@
-<h1>hello world</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter HTML JS CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    Text: <input type="text"><br>
+    Email: <input type="email"><br>
+    Password: <input type="password"><br>
+    Number: <input type="number"><br>
+    Date: <input type="date"><br>
+    URL: <input type="url"><br>
+    Telephone: <input type="tel"><br>
+    Color: <input type="color"><br>
+    Range: <input type="range"><br>
+    Checkbox:
+    <input type="checkbox"> Option 1
+    <input type="checkbox"> Option 2
+    <input type="checkbox"> Option 3<br>
+    Radio:
+    <input type="radio"> Choice A
+    <input type="radio"> Choice B
+    <input type="radio"> Choice C<br>
+    Dropdown:
+    <select>
+    <option>Option X</option>
+    <option>Option Y</option>
+    </select><br>
+    Comments:<br><textarea rows="5">
+    </textarea><br>
+    <input type="checkbox">English <!--no label-->
+    <label><input type="checkbox">Non English</label>
+    <input id="cb1" type="checkbox"><label for="cb1">Non English</label>
+    <input id="aField" type="number" placeholder="Enter a">
+    <input id="bField" type="number" placeholder="Enter b">
+    <button id="sum">Get Sum</button>
+    <p class="msg-box" id="sum-box">Enter 2 numbers, press get sum</p>
+    <label id="smaller">??</label>&lt;<input type="number" id="guessField">
+    &lt;<label id="bigger">??</label><button id="btnGuess">Guess!</button>
+    <p id="commentsBox">Guess my number!</p>
+    
+    <h1>MCQ Quiz</h1>
+<fieldset>
+    <legend>1. What is the capital of Japan?</legend>
+    <input type="radio" name="q1" value="Beijing"> Beijing<br>
+    <input type="radio" name="q1" value="Seoul"> Seoul<br>
+    <input type="radio" name="q1" value="Tokyo"> Tokyo<br>
+    <input type="radio" name="q1" value="Bangkok"> Bangkok<br>
+</fieldset>
+<fieldset>
+    <legend>2. Which of these is a primary color?</legend>
+    <input type="radio" name="q2" value="Cyan"> Cyan<br>
+    <input type="radio" name="q2" value="Orange"> Orange<br>
+    <input type="radio" name="q2" value="Purple"> Purple<br>
+    <input type="radio" name="q2" value="Red"> Red<br>
+</fieldset>
+<button id="btnSubmit">Submit Quiz</button>
+<h3 id="scorebox">Not submitted</h3>
+
+</body>
+</html>
