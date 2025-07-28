@@ -1,65 +1,384 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Braxton Prac11</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starter HTML JS CSS</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="main.js" defer></script>
 </head>
-<body>
-    Text: <input type="text"><br>
-    Email: <input type="email"><br>
-    Password: <input type="password"><br>
-    Number: <input type="number"><br>
-    Date: <input type="date"><br>
-    URL: <input type="url"><br>
-    Telephone: <input type="tel"><br>
-    Color: <input type="color"><br>
-    Range: <input type="range"><br>
-    Checkbox:
-    <input type="checkbox"> Option 1
-    <input type="checkbox"> Option 2
-    <input type="checkbox"> Option 3<br>
-    Radio:
-    <input type="radio"> Choice A
-    <input type="radio"> Choice B
-    <input type="radio"> Choice C<br>
-    Dropdown:
-    <select>
-    <option>Option X</option>
-    <option>Option Y</option>
-    </select><br>
-    Comments:<br><textarea rows="5">
-    </textarea><br>
-    <input type="checkbox">English <!--no label-->
-    <label><input type="checkbox">Non English</label>
-    <input id="cb1" type="checkbox"><label for="cb1">Non English</label>
-    <input id="aField" type="number" placeholder="Enter a">
-    <input id="bField" type="number" placeholder="Enter b">
-    <button id="sum">Get Sum</button>
-    <p class="msg-box" id="sum-box">Enter 2 numbers, press get sum</p>
-    <label id="smaller">??</label>&lt;<input type="number" id="guessField">
-    &lt;<label id="bigger">??</label><button id="btnGuess">Guess!</button>
-    <p id="commentsBox">Guess my number!</p>
-    
-    <h1>MCQ Quiz</h1>
-<fieldset>
-    <legend>1. What is the capital of Japan?</legend>
-    <input type="radio" name="q1" value="Beijing"> Beijing<br>
-    <input type="radio" name="q1" value="Seoul"> Seoul<br>
-    <input type="radio" name="q1" value="Tokyo"> Tokyo<br>
-    <input type="radio" name="q1" value="Bangkok"> Bangkok<br>
-</fieldset>
-<fieldset>
-    <legend>2. Which of these is a primary colour?</legend>
-    <input type="radio" name="q2" value="Cyan"> Cyan<br>
-    <input type="radio" name="q2" value="Orange"> Orange<br>
-    <input type="radio" name="q2" value="Purple"> Purple<br>
-    <input type="radio" name="q2" value="Red"> Red<br>
-</fieldset>
-<button id="btnSubmit">Submit Quiz</button>
-<h3 id="scorebox">Not submitted</h3>
+<body class ="gridcontainer">
+    <header class="gridheader">
+        <h1>Main Topic</h1>
+        <nav class="main-nav">
+            <button id="topicsIcon">Open Topics</button>
+            <ul>
+                <li><button id="page5btn">Home</button></li>
+                <li><button id="page1btn">Sub Topic 1</button></li>
+                <li><button id="page2btn">Sub Topic 2</button></li>
+                <li><button id="page3btn">Sub Topic 3</button></li>
+                <li><button id="page4btn">Sub Topic 4</button></li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="gridnav">
+            <ul>
+                <li><a href="#background">Background</a></li>
+                <li><a href="#aspiration">Aspiration</a></li>
+                <li><a href="#family">Family</a></li>
+                <li><a href="#besties">Besties</a></li>
+                <li><a href="#RAISEC">Raisec profile</a></li>
+                <li><a href="#top">Return to Top</a></li>
+            </ul>
+    </nav>
+    <main class="gridmain" id="pagecontainer">
+        <section class="page" id="page5">
+            <h2>Homepage</h2>
+            <p>hello world</p>
+        </section>
+        <section class="page" id="page1">
+            <article>
+                <h2>History and origin of mangosteen</h2>
+                <p>Mangosteen has been growing wild since ancient times, and is native to select regions of Southeast Asia, 
+                presumably originating in Malaysia and the Sunda Islands of Indonesia</p>
+            </article>
+            <article>
+                <h2>The Mythical History of Mangosteen</h2>
+                <p>Mangosteen earned the title "Queen of Fruits" due to its exquisite taste and rarity</p>
+                <p>It was first introduced to the Western world in the 18th century by European explorers and traders.</p>
+                <p>In the 19th century, mangosteen became a symbol of luxury and was often associated with royalty.</p>
+                <p>Mangosteen goes bad easily when not kept in low temperature areas, making transporting it difficult in the 19th centuries</p>
+                <p>According to legend, Queen Victoria of England offered a reward to anyone who could deliver her a fresh mangosteen.</p>
+                <p>In Southeast Asia, mangosteen was often reserved for royalty and honoured guests, symbolising prestige and purity.</p>
+            </article>
+            <button id="leftBtn">Left</button>
+            <button id="rightBtn">Right</button>
+            <button id="upBtn">Up</button>
+            <button id="downBtn">Down</button>
+            <button id="resetBtn">Reset</button>
+            <div id="ball">Ball</div>
+        </section>
+        <section class="page" id="page2">
+            <article>
+                <h2>Climate Requirements</h2>
+                <p>Temperature Range: 25°C to 35°C</p>
+                <p>Humidity: High humidity (≥70%)</p>
+                <p>Rainfall: Requires at least 50 inches of annual rainfall or consistent irrigation</p>
+            </article>
+            <article>
+                <h2>Soil Requirements</h2>
+                <p>Well-drained, sandy loam or clay loam soils</p>
+                <p>pH Level: Slightly acidic to neutral (5.5 to 7.0)</p>
+                <p>Organic Matter: High organic matter content for nutrient retention</p>
+            </article>
+            <article>
+                <h2>Sunlight and Shade</h2>
+                <p>Young trees: Prefer partial shade for the first 2-3 years</p>
+                <p>Mature trees: Thrive in full sun exposure</p>
+                <p>Wind Protection: Must be sheltered from strong winds and salt spray</p>
+            </article>
+            <article>
+                <h2>Watering</h2>
+                <p>Young trees: Maintain consistently moist soil without allowing it to become waterlogged, 
+                as young roots are sensitive to excess moisture.</p>
+                <p>Mature trees: Provide deep, thorough watering during dry periods to support fruit development, 
+                while ensuring proper drainage to prevent standing water.</p>
+            </article>
+            <article>
+                <h2>Fertilisation</h2>
+                <p>Young trees: Every 3-4 months for young trees.</p>
+                <p>Mature trees: Twice a year for mature trees.</p>
+                <p>Type: Balanced NPK, fish emulsion, or organic compost</p>
+            </article>
+            <article>
+                <h2>Time to fruit</h2>
+                <p>Seed-grown Trees: 8-15 years to bear fruit</p>
+                <p>Grafted Trees: 3-5 years to bear fruit</p>
+            </article>
+            <article>
+                <h2>Signs of Ripeness</h2>
+                <p>Colour: Skin turns to dark purple</p>
+                <p>Texture: Skin becomes slightly soft to the touch</p>
+                <p>Shape: Fruit appears round and plump</p>
+            </article>
+            <article>
+                <h2>Harvesting tips</h2>
+                <p>Method: Use a sharp knife or pruning shears to cut the fruit from the stem, 
+                leaving a small portion of the stem attached to the fruit.</p>
+                <p>Handling: Handle the fruit gently to avoid bruising, 
+                as mangosteen is delicate and can be easily damaged.</p>
+                <p>Harvesting Time: Harvest in the morning or late afternoon when temperatures are cooler
+                to minimise fruit damage and maintain quality.</p>
+            </article>
+            <article>
+                <h2>Storage and Shelf Life</h2>
+                <p>Storage: Store in a cool, dry place or refrigerate to extend shelf life.</p>
+                <p>Shelf Life: Fresh mangosteen can last up to 2 weeks when stored properly.</p>
+                <p>Freezing: Mangosteen can be frozen for longer storage, but texture may change upon thawing.</p>
+            </article>
+        </section>
+        <section class="page" id="page3">
+            <article>
+                <h2>Nutritional and health benefits</h2>
+                <p>Mangosteen is a nutritious fruit that is
+                rich in vitamins C and B, fiber, and antioxidants, 
+                which can help boost the immune system,
+                improve digestion, and reduce inflammation.</p>
+            </article>
+            <article>
+                <h2>Nutritional Profile of Mangosteen (per 100g)</h2>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Nutrient</th>
+                            <th>Amount</th>
+                            <th>Benefit</th>
+                        </tr>
+                        <tr>
+                            <td>Calories</td>
+                            <td>~73 kcal</td>
+                            <td>Low-calorie, weight-friendly</td>
+                        </tr>
+                        <tr>
+                            <td>Carbohydrates</td>
+                            <td>18 g</td>
+                            <td>Natural energy</td>
+                        </tr>
+                        <tr>
+                            <td>Sugars</td>
+                            <td>17 g</td>
+                            <td>Quick fuel source</td>
+                        </tr>
+                        <tr>
+                            <td>Dietary Fiber</td>
+                            <td>1.8-3.5 g</td>
+                            <td>Digestive health</td>
+                        </tr>
+                        <tr>
+                            <td>Protein</td>
+                            <td>~0.4-1 g</td>
+                            <td>Tissue repair</td>
+                        </tr>
+                        <tr>
+                            <td>Fat</td>
+                            <td>~0.6-1 g</td>
+                            <td>Minimal fat content</td>
+                        </tr>
+                        <tr>
+                            <td>Vitamin C</td>
+                            <td>~12% RDI</td>
+                            <td>Immune support, antioxidant</td>
+                        </tr>
+                        <tr>
+                            <td>Folate (B9)</td>
+                            <td>~14-15% RDI</td>
+                            <td>DNA synthesis, pregnancy health</td>
+                        </tr>
+                        <tr>
+                            <td>Thiamine (B1)</td>
+                            <td>~9% RDI</td>
+                            <td>Energy metabolism</td>
+                        </tr>
+                        <tr>
+                            <td>Riboflavin (B2)</td>
+                            <td>~8% RDI</td>
+                            <td>Cellular function</td>
+                        </tr>
+                        <tr>
+                            <td>Manganese</td>
+                            <td>~9-11% RDI</td>
+                            <td>Antioxidant enzyme support</td>
+                        </tr>
+                        <tr>
+                            <td>Copper</td>
+                            <td>~15% RDI</td>
+                            <td>Iron metabolism, brain health</td>
+                        </tr>
+                        <tr>
+                            <td>Magnesium</td>
+                            <td>~6% RDI</td>
+                            <td>Muscle and nerve function</td>
+                        </tr>
+                        <tr>
+                            <td>Potassium</td>
+                            <td>~48 mg</td>
+                            <td>Blood pressure regulation</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+            <article>
+                <h2>Health Benefits of Mangosteen</h2>
+                <ol>
+                    <li>
+                        <h3>Rich in Antioxidants</h3>
+                        <ul>
+                            <li>Contains xanthones, powerful plant compounds that fight oxidative stress.</li>
+                            <li>Helps protect cells from damage and may slow aging.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Anti-Inflammatory Effects</h3>
+                        <ul>
+                            <li>Xanthones and fiber reduce inflammation, potentially lowering risk of chronic diseases like arthritis, heart disease, and diabetes.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Supports Immune Function</h3>
+                        <ul>
+                            <li>High in vitamin C and fiber, which boost immune cell activity and gut health. <sup>1, 3</sup></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Promotes Digestive Health</h3>
+                        <ul>
+                            <li>Fiber aids in regular bowel movements and supports healthy gut bacteria. <sup>2, 3</sup></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>May Aid Weight Loss</h3>
+                        <ul>
+                            <li>Low in calories, high in fiber — helps you feel full longer.</li>
+                            <li>Some studies suggest mangosteen juice may reduce body fat and BMI. <sup>1, 3</sup></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Blood Sugar Control</h3>
+                        <ul>
+                            <li>Xanthones and fiber help regulate insulin and glucose levels.</li>
+                            <li>May reduce insulin resistance in obese individuals. <sup>1, 3</sup></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Skin Health</h3>
+                        <ul>
+                            <li>Antioxidants improve elasticity and reduce signs of aging.</li>
+                            <li>May protect against UV damage and reduce acne. <sup>1, 2</sup></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Heart Health</h3>
+                        <ul>
+                            <li>May lower LDL (bad cholesterol) and triglycerides, while boosting HDL (good cholesterol). <sup>1</sup></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Cancer-Fighting Potential</h3>
+                        <ul>
+                            <li>Xanthones may inhibit growth of cancer cells in lab studies (breast, lung, colon). <sup>1, 3</sup></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Brain and Mental Health</h3>
+                        <ul>
+                            <li>Antioxidants may reduce brain inflammation and support cognitive function. <sup>1, 2</sup></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Oral and Gum Health</h3>
+                        <ul>
+                            <li>Antibacterial properties help fight gum disease and improve oral hygiene. <sup>4</sup></li>
+                        </ul>
+                    </li>
+                </ol>
+            </article>
+        </section>
+        <section class="page" id="page4">
+            <h2>Market demands</h2>
+            <p>Mangosteen is in high demand in the global market, especially in Southeast Asia, 
+            where it is valued for its unique flavor, nutritional benefits, and potential health properties.</p>
 
+            <div class="map-page-layout">
+                <div class="map-section">
+                    <div class="map-container">
+                        <img src="images/Map.png" alt="Map of Southeast Asia">
+
+                        <a href="#" class="map-region" id="Myanmar"></a>
+                        <a href="#" class="map-region" id="Thailand"></a>
+                        <a href="#" class="map-region" id="Laos"></a>
+                        <a href="#" class="map-region" id="Vietnam"></a>
+                        <a href="#" class="map-region" id="Cambodia"></a>
+                        <a href="#" class="map-region" id="Malaysia"></a>
+                        <a href="#" class="map-region" id="Singapore"></a>
+                        <a href="#" class="map-region" id="Indonesia"></a>
+                        <a href="#" class="map-region" id="Philippines"></a>
+                        <a href="#" class="map-region" id="Brunei"></a>
+                        <a href="#" class="map-region" id="East-Timor"></a>
+                    </div>
+                </div>
+
+                <div class="country-stats-section">
+                    <div id="country-intro" class="country-content active">
+                        <h3>Select a country on the map.</h3>
+                        <p>Click on any country to see its market demand statistics.</p>
+                    </div>
+                    
+                    <div id="country-myanmar" class="country-content">
+                        <h3>Myanmar Market Demand</h3>
+                        <p>Each year, Myanmar produces around 20,000 Tons of Mangosteen.</p>
+                        <p>Myanmar has limited domestic export, mostly local consumption.</p>
+                    </div>
+                    <div id="country-thailand" class="country-content">
+                        <h3>Thailand Market Demand</h3>
+                        <p>Each year, Thailand produces around 350,000 Tons of Mangosteen.</p>
+                        <p>Thailand is the largest exporter of Mangosteen in the world.</p>
+                    </div>
+                    <div id="country-laos" class="country-content">
+                        <h3>Laos Market Demand</h3>
+                        <p>Each year, Laos produces around 5,000  Tons of Mangosteen.</p>
+                        <p>Laos have minimal commercial demand, hence low production.</p>
+                    </div>
+                    <div id="country-vietnam" class="country-content">
+                        <h3>Vietnam Market Demand</h3>
+                        <p>Each year, Vietnam produces around 37,000 Tons of Mangosteen.</p>
+                        <p>Vietnam has high local demands.</p>
+                    </div>
+                    <div id="country-cambodia" class="country-content">
+                        <h3>Cambodia Market Demand</h3>
+                        <p>Each year, Cambodia produces around 2,000-3,000 Tons of Mangosteen.</p>
+                        <p>Cambodia has small but growing demand.</p>
+                    </div>
+                    <div id="country-malaysia" class="country-content">
+                        <h3>Malaysia Market Demand</h3>
+                        <p>Each year, Malaysia produces around 23,500 Tons of Mangosteen.</p>
+                        <p>Malaysia exports to Singapore and other countries</p>
+                    </div>
+                    <div id="country-singapore" class="country-content">
+                        <h3>Singapore Market Demand</h3>
+                        <p>Singapore does not grow mangosteens due to limited land space and costs, hence they import around 27,000 tons of mangosteens anually.</p>
+                        <p>Singapore has high per capita demand and imports premium mangosteen from Thailand and Malaysia.</p>
+                    </div>
+                    <div id="country-indonesia" class="country-content">
+                        <h3>Indonesia Market Demand</h3>
+                        <p>Each year, Indonesia produces around 320,000 Tons of Mangosteen.</p>
+                        <p>Indonesia has high domestic consumption and exports to Asia and Middle East.</p>
+                    </div>
+                    <div id="country-philippines" class="country-content">
+                        <h3>Philippines Market Demand</h3>
+                        <p>Each year, Philippines produces around 5,000-8,000 Tons of Mangosteen.</p>
+                        <p>Philippines have moderate demand with most of it consumed locally.</p>
+                    </div>
+                    <div id="country-brunei" class="country-content">
+                        <h3>Brunei Market Demand</h3>
+                        <p>Each year, Brunei produces around 500-800 Tons of Mangosteen.</p>
+                        <p>Brunei has small demand; imports small quantities for premium retail.</p>
+                    </div>
+                    <div id="country-east-timor" class="country-content">
+                        <h3>East Timor Market Demand</h3>
+                        <p>Each year, East Timor produces less than 500 Tons of Mangosteen.</p>
+                        <p>East Timor has very limited demand with emerging agricultural interest.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="clearfloat gridfooter">
+            <p class="footer-rights">© 2025 Braxton. All rights reserved.</p>
+            <details>
+                <summary>Credits</summary>
+                <p>This portfolio was created by Braxton Hong, 孔俊衡.</p>
+                <p>Credits: </p>
+                <ul>           
+                </ul>
+            </details>
+        </footer>
 </body>
-</html>
