@@ -998,7 +998,6 @@ td:first-child {
         height: auto;
         aspect-ratio: 1 / 1;
     }
-    
     .map-page-layout {
         flex-direction: column; 
         gap: 1em; 
