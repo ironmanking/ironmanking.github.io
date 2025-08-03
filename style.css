@@ -989,6 +989,16 @@ td:first-child {
         transform: none;
     }
 
+    .links-section {
+        gap: 1em; 
+    }
+
+    .link-item {
+        width: 90%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+    
     .map-page-layout {
         flex-direction: column; 
         gap: 1em; 
