@@ -1,0 +1,14 @@
+{ 
+    "name": "Mangosteen 240662H",
+    "short_name": "Mangosteen",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#00FF00",
+    "icons": [
+        { "src": "images/icons8-mangosteen-64.png",
+        "sizes": "64x64",
+        "type": "image/png"
+        }
+    ]
+}

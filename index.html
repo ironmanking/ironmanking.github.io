@@ -1,63 +1,169 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Braxton Prac11</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Mangosteen</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- get icons from https://www.favicon.cc -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
 <body class ="gridcontainer">
     <header class="gridheader">
-        <h1>Main Topic</h1>
+        <h1 id="top">
+            MANGOSTEEN
+        </h1>
         <nav class="main-nav">
             <button id="topicsIcon">Open Topics</button>
             <ul>
-                <li><button id="page5btn">Home</button></li>
-                <li><button id="page1btn">Sub Topic 1</button></li>
-                <li><button id="page2btn">Sub Topic 2</button></li>
-                <li><button id="page3btn">Sub Topic 3</button></li>
-                <li><button id="page4btn">Sub Topic 4</button></li>
+                <li><button id="page5btn">🏠Home🏠</button></li>
+                <li><button id="page1btn">📜History📜</button></li>
+                <li><button id="page2btn">🪴Growing🪴</button></li>
+                <li><button id="page3btn">💉Health💉</button></li>
+                <li><button id="page4btn">💵Demands💵</button></li>
+                <li><button id="page6btn">🎮Game🎮</button></li>
+                <li><button id="page7btn">📕Quiz📕</button></li>
             </ul>
         </nav>
     </header>
     <nav class="gridnav">
-            <ul>
-                <li><a href="#background">Background</a></li>
-                <li><a href="#aspiration">Aspiration</a></li>
-                <li><a href="#family">Family</a></li>
-                <li><a href="#besties">Besties</a></li>
-                <li><a href="#RAISEC">Raisec profile</a></li>
-                <li><a href="#top">Return to Top</a></li>
-            </ul>
+        <ul>
+            <li><button id="openFunfact1">Fun Fact 1🤫</button></li> 
+            <li><button id="openFunfact2">Fun Fact 2🤫</button></li> 
+            <li><button id="openFunfact3">Fun Fact 3🤫</button></li>
+            <li><button id="btnFS">FullScreen</button></li> 
+            <li><button id="btnWS">Exit Full Screen</button></li> 
+        </ul>
     </nav>
+        <div class="popup" id="funfactPopup1">
+            <div class="popup-inner">
+                <h2>🌸 Self-Fertilising Flowers</h2>
+                <p>Mangosteen flowers are hermaphroditic, meaning they contain both</p>
+                <p> male and female parts and can self-fertilise —a rare trait in fruit trees.</p>
+                <p>This allows them to produce fruit even in isolated conditions,</p>
+                <p>making them resilient in their native habitats.</p>
+                <button id="closeFunfactPopup1">Close</button>
+            </div>
+        </div>  
+        <div class="popup" id="funfactPopup2"> 
+            <div class="popup-inner">
+                <h2>🎨 Natural Dye Source</h2>
+                <p>The deep purple rind contains pigments that</p>
+                <p>can stain skin and fabric, and is used as a</p>
+                <p>natural dye in traditional crafts.</p>
+                <button id="closeFunfactPopup2">Close</button> 
+            </div>
+        </div>
+        <div class="popup" id="funfactPopup3"> 
+            <div class="popup-inner">
+                <h2>🧬 Mangosteen Seeds Arent Real Seeds</h2>
+                <p>What we call "seeds" inside mangosteen are </p>
+                <p>not real seeds at all—they are lookalikes formed without fertilisation.</p>
+                <p>This means you cant just plant one and expect a tree to grow. </p>
+                <button id="closeFunfactPopup3">Close</button> 
+            </div>
+        </div>
     <main class="gridmain" id="pagecontainer">
-        <section class="page" id="page5">
-            <h2>Homepage</h2>
-            <p>hello world</p>
+    <section class="page" id="page5">
+        <h2>Mangosteen</h2>
+        <p>👑"The Queen of Fruits"👑</p>
+        <div class="mangosteen-spinning-image">
+            <img src="images/mangosteengame.png" alt="Spinning Mangosteen" class="imageRotate">
+        </div>
+        <article>
+            <h3>Discover the Royal Fruit!</h3>
+            <p>Find out why mangosteen is named "The Queen of Fruits"</p>
+            <p>Explore its history, cultivation, and health benefits.</p>
+            <p>Learn how to grow this exotic fruit!</p>
+            <p>Or play the game to catch mangosteens!</p>
+        </article>
+        <section class="links-section">
+            <a href="#page1" class="link-item">
+                <img class="link-item-img" src="images/Historyhome.png" alt="History"
+                title="History">
+                <div class="link-text-container">
+                    <h3>History</h3>
+                </div>
+            </a>
+            <a href="#page2" class="link-item">
+                <img class="link-item-img" src="images/Growinghome.png" alt="Growing"
+                title="Growing">
+                <div class="link-text-container">
+                    <h3>Growing</h3>
+                </div>
+            </a>
+            <a href="#page3" class="link-item">
+                <img class="link-item-img" src="images/Healthhome.png" alt="Health"
+                title="Health">
+                <div class="link-text-container">
+                    <h3>Health</h3>
+                </div>
+            </a>
+            <a href="#page4" class="link-item">
+                <img class="link-item-img" src="images/Demandshome.png" alt="Demands"
+                title="Demands">
+                <div class="link-text-container">
+                    <h3>Demands</h3>
+                </div>
+            </a>
+            <a href="#page6" class="link-item">
+                <img class="link-item-img" src="images/Gamehome.png" alt="Games"
+                title="Games">
+                <div class="link-text-container">
+                    <h3>Games</h3>
+                </div>
+            </a>
+            <a href="#page7" class="link-item">
+                <img class="link-item-img" src="images/Quizhome.png" alt="Quiz"
+                title="Quiz">
+                <div class="link-text-container">
+                    <h3>Quiz</h3>
+                </div>
+            </a>
         </section>
+        <p class="textQRcode">"Scan to view on mobile"</p>
+        <img src="images/QRcode.png" alt="QRcode" class="qr-code-image">
+        <div class="icon-sprite-container">
+            <a class="icon-item instagram-icon" href="https://www.instagram.com/imkironmanking?igsh=emNyeWtkeDF6NDgx"></a>
+            <a class="icon-item valorant-icon" href="https://tracker.gg/valorant/profile/riot/ironmanking%231253/overview?platform=pc&playlist=competitive&season=ac12e9b3-47e6-9599-8fa1-0bb473e5efc7"></a>
+            <a class="icon-item spotify-icon" href="https://open.spotify.com/user/31k7guzicwqkxkhy6o6pxzbz6h6u"></a>
+        </div>
+    </section>
         <section class="page" id="page1">
-            <article>
-                <h2>History and origin of mangosteen</h2>
-                <p>Mangosteen has been growing wild since ancient times, and is native to select regions of Southeast Asia, 
-                presumably originating in Malaysia and the Sunda Islands of Indonesia</p>
+            <h2>History and origin of mangosteen</h2>
+            <article class="article-with-image-box">
+                <div class="article-text-content">
+                    <h2>History and origin of mangosteen</h2>
+                    <p>Mangosteen has been growing wild since ancient times, and is native to select regions of Southeast Asia, 
+                    presumably originating in Malaysia and the Sunda Islands of Indonesia</p>
+                </div>
+                <div class="article-image-box">
+                    <img src="images/mangosteen.png" alt="Mangosteen">
+                    <p class="image-caption">Mangosteen</p>
+                </div>
             </article>
-            <article>
-                <h2>The Mythical History of Mangosteen</h2>
-                <p>Mangosteen earned the title "Queen of Fruits" due to its exquisite taste and rarity</p>
-                <p>It was first introduced to the Western world in the 18th century by European explorers and traders.</p>
-                <p>In the 19th century, mangosteen became a symbol of luxury and was often associated with royalty.</p>
-                <p>Mangosteen goes bad easily when not kept in low temperature areas, making transporting it difficult in the 19th centuries</p>
-                <p>According to legend, Queen Victoria of England offered a reward to anyone who could deliver her a fresh mangosteen.</p>
-                <p>In Southeast Asia, mangosteen was often reserved for royalty and honoured guests, symbolising prestige and purity.</p>
+            <article class="article-with-image-box">
+                <div class="article-text-content">
+                    <h2>The Mythical History of Mangosteen</h2>
+                    <p>Garcinia mangostana(Scientific name), also know as Mangosteen, earned the title "Queen of Fruits" due to its exquisite taste and rarity</p>
+                    <p>It was first introduced to the Western world in the 18th century by European explorers and traders.</p>
+                    <p>In the 19th century, mangosteen became a symbol of luxury and was often associated with royalty.</p>
+                    <p>Mangosteen goes bad easily when not kept in low temperature areas, making transporting it difficult in the 19th centuries</p>
+                    <p>According to legend, Queen Victoria of England offered a reward to anyone who could deliver her a fresh mangosteen.</p>
+                    <p>In Southeast Asia, mangosteen was often reserved for royalty and honoured guests, symbolising prestige and purity.</p>
+                </div>
+                <div class="article-image-box">
+                    <img src="images/mangosteendrawing.png" alt="Mangosteen drawing">
+                    <p class="image-caption">Drawing of Garcinia mangostana</p>
+                </div>
             </article>
-            <button id="leftBtn">Left</button>
-            <button id="rightBtn">Right</button>
-            <button id="upBtn">Up</button>
-            <button id="downBtn">Down</button>
-            <button id="resetBtn">Reset</button>
-            <div id="ball">Ball</div>
         </section>
         <section class="page" id="page2">
+            <h2>Growing conditions</h2>
             <article>
                 <h2>Climate Requirements</h2>
                 <p>Temperature Range: 25°C to 35°C</p>
@@ -89,34 +195,63 @@
                 <p>Mature trees: Twice a year for mature trees.</p>
                 <p>Type: Balanced NPK, fish emulsion, or organic compost</p>
             </article>
-            <article>
-                <h2>Time to fruit</h2>
-                <p>Seed-grown Trees: 8-15 years to bear fruit</p>
-                <p>Grafted Trees: 3-5 years to bear fruit</p>
+            <article class="article-with-image-box">
+                    <div class="article-text-content">
+                        <h2>Time to fruit</h2>
+                        <p>Seed-grown Trees: 8-15 years to bear fruit</p>
+                        <p>Grafted Trees: 3-5 years to bear fruit</p>
+                    </div>
+                    <div class="article-image-box">
+                        <img src="images/mangosteentree.png" alt="Mangosteen tree">
+                        <p class="image-caption">Mangosteen Tree</p>
+                    </div>
             </article>
-            <article>
-                <h2>Signs of Ripeness</h2>
-                <p>Colour: Skin turns to dark purple</p>
-                <p>Texture: Skin becomes slightly soft to the touch</p>
-                <p>Shape: Fruit appears round and plump</p>
+            <article class="article-with-image-box">
+                <div class="article-text-content">
+                    <h2>Signs of Ripeness</h2>
+                    <p>Colour: Skin turns to dark purple</p>
+                    <p>Texture: Skin becomes slightly soft to the touch</p>
+                    <p>Shape: Fruit appears round and plump</p>
+                </div>
+                <div class="article-image-box">
+                    <div class="image-slideshow">
+                        <img src="images/youngmangosteen.png" alt="Young mangosteen" class="slideshow-image active">
+                        <img src="images/oldermangosteen.png" alt="Older mangosteen" class="slideshow-image">
+                        <img src="images/ripemangosteen.png" alt="Riped mangosteen" class="slideshow-image">
+                    </div>
+                    <p class="image-caption">From young to ripe mangosteen.</p>
+                </div>
             </article>
-            <article>
-                <h2>Harvesting tips</h2>
-                <p>Method: Use a sharp knife or pruning shears to cut the fruit from the stem, 
-                leaving a small portion of the stem attached to the fruit.</p>
-                <p>Handling: Handle the fruit gently to avoid bruising, 
-                as mangosteen is delicate and can be easily damaged.</p>
-                <p>Harvesting Time: Harvest in the morning or late afternoon when temperatures are cooler
-                to minimise fruit damage and maintain quality.</p>
+            <article class="article-with-image-box">
+                    <div class="article-text-content">
+                        <h2>Harvesting tips</h2>
+                        <p>Method: Use a sharp knife or pruning shears to cut the fruit from the stem, 
+                        leaving a small portion of the stem attached to the fruit.</p>
+                        <p>Handling: Handle the fruit gently to avoid bruising, 
+                        as mangosteen is delicate and can be easily damaged.</p>
+                        <p>Harvesting Time: Harvest in the morning or late afternoon when temperatures are cooler
+                        to minimise fruit damage and maintain quality.</p>
+                    </div>
+                    <div class="article-image-box">
+                        <img src="images/shears.png" alt="Shears">
+                        <p class="image-caption">Shears</p>
+                    </div>
             </article>
-            <article>
-                <h2>Storage and Shelf Life</h2>
-                <p>Storage: Store in a cool, dry place or refrigerate to extend shelf life.</p>
-                <p>Shelf Life: Fresh mangosteen can last up to 2 weeks when stored properly.</p>
-                <p>Freezing: Mangosteen can be frozen for longer storage, but texture may change upon thawing.</p>
+            <article class="article-with-image-box">
+                    <div class="article-text-content">
+                        <h2>Storage and Shelf Life</h2>
+                        <p>Storage: Store in a cool, dry place or refrigerate to extend shelf life.</p>
+                        <p>Shelf Life: Fresh mangosteen can last up to 2 weeks when stored properly.</p>
+                        <p>Freezing: Mangosteen can be frozen for longer storage, but texture may change upon thawing.</p>
+                    </div>
+                    <div class="article-image-box">
+                        <img src="images/frozenmangosteen.png" alt="Frozen mangosteen">
+                        <p class="image-caption">Frozen mangosteens</p>
+                    </div>
             </article>
         </section>
         <section class="page" id="page3">
+            <h2>Health benefits of mangosteens</h2>
             <article>
                 <h2>Nutritional and health benefits</h2>
                 <p>Mangosteen is a nutritious fruit that is
@@ -292,17 +427,17 @@
                     <div class="map-container">
                         <img src="images/Map.png" alt="Map of Southeast Asia">
 
-                        <a href="#" class="map-region" id="Myanmar"></a>
-                        <a href="#" class="map-region" id="Thailand"></a>
-                        <a href="#" class="map-region" id="Laos"></a>
-                        <a href="#" class="map-region" id="Vietnam"></a>
-                        <a href="#" class="map-region" id="Cambodia"></a>
-                        <a href="#" class="map-region" id="Malaysia"></a>
-                        <a href="#" class="map-region" id="Singapore"></a>
-                        <a href="#" class="map-region" id="Indonesia"></a>
-                        <a href="#" class="map-region" id="Philippines"></a>
-                        <a href="#" class="map-region" id="Brunei"></a>
-                        <a href="#" class="map-region" id="East-Timor"></a>
+                        <a href="#Myanmar" class="map-region" id="Myanmar"></a>
+                        <a href="#Thailand" class="map-region" id="Thailand"></a>
+                        <a href="#Laos" class="map-region" id="Laos"></a>
+                        <a href="#Vietnam" class="map-region" id="Vietnam"></a>
+                        <a href="#Cambodia" class="map-region" id="Cambodia"></a>
+                        <a href="#Malaysia" class="map-region" id="Malaysia"></a>
+                        <a href="#Singapore" class="map-region" id="Singapore"></a>
+                        <a href="#Indonesia" class="map-region" id="Indonesia"></a>
+                        <a href="#Philippines" class="map-region" id="Philippines"></a>
+                        <a href="#Brunei" class="map-region" id="Brunei"></a>
+                        <a href="#East-Timor" class="map-region" id="East-Timor"></a>
                     </div>
                 </div>
 
@@ -370,15 +505,145 @@
                 </div>
             </div>
         </section>
+        <section class="page" id="page6">
+            <div class="game-container">
+                <h2>Mangosteen Catch!</h2>
+                <div id="gameArea">
+                    <div id="basket"></div>
+                    <div id="gameOverMessage" class="hidden">
+                        <h3>GAME OVER!</h3>
+                        <p>Final Score: <span id="finalScoreDisplay">0</span></p>
+                    </div>
+                </div>
+                <div class="game-controls">
+                    <button id="startGameBtn">Start Game</button>
+                    <button id="restartGameBtn">Restart Game</button>
+                    <p>Score: <span id="scoreDisplay">0</span></p>
+                    <p>Lives: <span id="livesDisplay">3</span></p>
+
+                    <div class="touch-controls">
+                        <button id="moveLeftBtn" class="mobile-game-button">Move Left</button>
+                        <button id="moveRightBtn" class="mobile-game-button">Move Right</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page" id="page7">
+            <h2>Mangosteen Quiz</h2>
+            <fieldset>
+                <legend>1. Where is the mangosteen presumably native to?</legend>
+                <div class="option-box"><input type="radio" name="q1" value="Africa"> Africa</div>
+                <div class="option-box"><input type="radio" name="q1" value="Southeast Asia"> Southeast Asia</div>
+                <div class="option-box"><input type="radio" name="q1" value="South America"> South America</div>
+                <div class="option-box"><input type="radio" name="q1" value="Europe"> Europe</div>
+            </fieldset>
+            <fieldset>
+                <legend>2. What title did the mangosteen earn due to its exquisite taste and rarity?</legend>
+                <div class="option-box"><input type="radio" name="q2" value="The King of Fruits"> The King of Fruits</div>
+                <div class="option-box"><input type="radio" name="q2" value="The Golden Berry"> The Golden Berry</div>
+                <div class="option-box"><input type="radio" name="q2" value="The Queen of Fruits"> The Queen of Fruits</div>
+                <div class="option-box"><input type="radio" name="q2" value="The Royal Jewel"> The Royal Jewel</div>
+            </fieldset>
+            <fieldset>
+                <legend>3. In which century was mangosteen first introduced to the Western world?</legend>
+                <div class="option-box"><input type="radio" name="q3" value="17th century"> 17th century</div>
+                <div class="option-box"><input type="radio" name="q3" value="18th century"> 18th century</div>
+                <div class="option-box"><input type="radio" name="q3" value="19th century"> 19th century</div>
+                <div class="option-box"><input type="radio" name="q3" value="20th century"> 20th century</div>
+            </fieldset>
+            <fieldset>
+                <legend>4. According to legend, which Queen offered a reward for a fresh mangosteen?</legend>
+                <div class="option-box"><input type="radio" name="q4" value="Queen Elizabeth I"> Queen Elizabeth I</div>
+                <div class="option-box"><input type="radio" name="q4" value="Queen Victoria"> Queen Victoria</div>
+                <div class="option-box"><input type="radio" name="q4" value="Queen Isabella"> Queen Isabella</div>
+                <div class="option-box"><input type="radio" name="q4" value="Queen Anne"> Queen Anne</div>
+            </fieldset>
+            <fieldset>
+                <legend>5. What is the ideal temperature range for growing mangosteen?</legend>
+                <div class="option-box"><input type="radio" name="q5" value="15°C to 25°C"> 15°C to 25°C</div>
+                <div class="option-box"><input type="radio" name="q5" value="25°C to 35°C"> 25°C to 35°C</div>
+                <div class="option-box"><input type="radio" name="q5" value="30°C to 40°C"> 30°C to 40°C</div>
+                <div class="option-box"><input type="radio" name="q5" value="20°C to 30°C"> 20°C to 30°C</div>
+            </fieldset>
+            <fieldset>
+                <legend>6. How much annual rainfall does mangosteen require?</legend>
+                <div class="option-box"><input type="radio" name="q6" value="Less than 20 inches"> Less than 20 inches</div>
+                <div class="option-box"><input type="radio" name="q6" value="20-30 inches"> 20-30 inches</div>
+                <div class="option-box"><input type="radio" name="q6" value="At least 50 inches"> At least 50 inches</div>
+                <div class="option-box"><input type="radio" name="q6" value="30-40 inches"> 30-40 inches</div>
+            </fieldset>
+            <fieldset>
+                <legend>7. What pH level is preferred for mangosteen soil?</legend>
+                <div class="option-box"><input type="radio" name="q7" value="Highly acidic (3.0-4.0)"> Highly acidic (3.0-4.0)</div>
+                <div class="option-box"><input type="radio" name="q7" value="Slightly acidic to neutral (5.5-7.0)"> Slightly acidic to neutral (5.5-7.0)</div>
+                <div class="option-box"><input type="radio" name="q7" value="Alkaline (7.5-8.5)"> Alkaline (7.5-8.5)</div>
+                <div class="option-box"><input type="radio" name="q7" value="Very neutral (7.0)"> Very neutral (7.0)</div>
+            </fieldset>
+            <fieldset>
+                <legend>8. How long do seed-grown mangosteen trees typically take to bear fruit?</legend>
+                <div class="option-box"><input type="radio" name="q8" value="1-2 years"> 1-2 years</div>
+                <div class="option-box"><input type="radio" name="q8" value="3-5 years"> 3-5 years</div>
+                <div class="option-box"><input type="radio" name="q8" value="8-15 years"> 8-15 years</div>
+                <div class="option-box"><input type="radio" name="q8" value="20+ years"> 20+ years</div>
+            </fieldset>
+            <fieldset>
+                <legend>9. What is a key sign that a mangosteen fruit is ripe?</legend>
+                <div class="option-box"><input type="radio" name="q9" value="Skin turns yellow"> Skin turns yellow</div>
+                <div class="option-box"><input type="radio" name="q9" value="Skin becomes hard to the touch"> Skin becomes hard to the touch</div>
+                <div class="option-box"><input type="radio" name="q9" value="Skin turns dark purple"> Skin turns dark purple</div>
+                <div class="option-box"><input type="radio" name="q9" value="Fruit appears shriveled"> Fruit appears shriveled</div>
+            </fieldset>
+            <fieldset>
+                <legend>10. What is an antioxidant found in mangosteen, known for fighting oxidative stress?</legend>
+                <div class="option-box"><input type="radio" name="q10" value="Anthocyanins"> Anthocyanins</div>
+                <div class="option-box"><input type="radio" name="q10" value="Carotenoids"> Carotenoids</div>
+                <div class="option-box"><input type="radio" name="q10" value="Xanthones"> Xanthones</div>
+                <div class="option-box"><input type="radio" name="q10" value="Flavonoids"> Flavonoids</div>
+            </fieldset>
+            <fieldset>
+                <legend>11. What is the dietary fiber content of mangosteen (per 100g)?</legend>
+                <div class="option-box"><input type="radio" name="q11" value="0.5 g"> 0.5 g</div>
+                <div class="option-box"><input type="radio" name="q11" value="1.8-3.5 g"> 1.8-3.5 g</div>
+                <div class="option-box"><input type="radio" name="q11" value="5-7 g"> 5-7 g</div>
+                <div class="option-box"><input type="radio" name="q11" value="Above 10 g"> Above 10 g</div>
+            </fieldset>
+            <fieldset>
+                <legend>12. Which vitamin is mangosteen high in, known for immune support?</legend>
+                <div class="option-box"><input type="radio" name="q12" value="Vitamin A"> Vitamin A</div>
+                <div class="option-box"><input type="radio" name="q12" value="Vitamin D"> Vitamin D</div>
+                <div class="option-box"><input type="radio" name="q12" value="Vitamin C"> Vitamin C</div>
+                <div class="option-box"><input type="radio" name="q12" value="Vitamin K"> Vitamin K</div>
+            </fieldset>
+            <fieldset>
+                <legend>13. Which country is mentioned as the largest exporter of Mangosteen in the world?</legend>
+                <div class="option-box"><input type="radio" name="q13" value="Malaysia"> Malaysia</div>
+                <div class="option-box"><input type="radio" name="q13" value="Indonesia"> Indonesia</div>
+                <div class="option-box"><input type="radio" name="q13" value="Thailand"> Thailand</div>
+                <div class="option-box"><input type="radio" name="q13" value="Vietnam"> Vietnam</div>
+            </fieldset>
+            <fieldset>
+                <legend>14. Why does Singapore import mangosteens instead of growing them?</legend>
+                <div class="option-box"><input type="radio" name="q14" value="Lack of suitable climate"> Lack of suitable climate</div>
+                <div class="option-box"><input type="radio" name="q14" value="High domestic consumption"> High domestic consumption</div>
+                <div class="option-box"><input type="radio" name="q14" value="Limited land space and costs"> Limited land space and costs</div>
+                <div class="option-box"><input type="radio" name="q14" value="Preference for other fruits"> Preference for other fruits</div>
+            </fieldset>
+            <fieldset>
+                <legend>15. What is the approximate annual production of Mangosteen in Indonesia?</legend>
+                <div class="option-box"><input type="radio" name="q15" value="37,000 Tons"> 37,000 Tons</div>
+                <div class="option-box"><input type="radio" name="q15" value="23,500 Tons"> 23,500 Tons</div>
+                <div class="option-box"><input type="radio" name="q15" value="320,000 Tons"> 320,000 Tons</div>
+                <div class="option-box"><input type="radio" name="q15" value="5,000-8,000 Tons"> 5,000-8,000 Tons</div>
+            </fieldset>
+            <button id="btnSubmit">Submit Quiz</button>
+            <h3 id="scorebox">Answer all the questions before submitting</h3>
+        </section>
     </main>
     <footer class="clearfloat gridfooter">
-            <p class="footer-rights">© 2025 Braxton. All rights reserved.</p>
-            <details>
-                <summary>Credits</summary>
-                <p>This portfolio was created by Braxton Hong, 孔俊衡.</p>
-                <p>Credits: </p>
-                <ul>           
-                </ul>
-            </details>
-        </footer>
+        <p class="footer-rights">© 2025 Braxton. All rights reserved.</p>
+        <details>
+            <summary>Credits</summary>
+            <p>This website was created by Braxton Hong, 孔俊衡.</p>
+        </details>
+    </footer>
 </body>
