@@ -807,7 +807,7 @@ td:first-child {
 
 }
 .icon-item {
-    background-image: url('../images/css_sprites.png');
+    background-image: url('../webdevA2/images/css_sprites.png');
     background-repeat: no-repeat;
     display: inline-block;
     vertical-align: middle;
