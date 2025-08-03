@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Vampire';
-    src: url('../ironmanking.github.io/font/vampire-wars.otf') format('truetype');
+    src: url('../ironmanking.github.io/font/vampire-wars.otf') format('opentype');
 }
 
 body {
